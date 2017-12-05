@@ -29,6 +29,7 @@ class BinaryTree {
 
 	contains(value) {
 		let hasValue = false;
+
 		const recurse = node => {
 			if(node.value === value) {
 				return true;
@@ -39,6 +40,8 @@ class BinaryTree {
 			} else if(node.right && node.value < value) {
 				hasValue = recurse(node.right);
 			}
+
+			return hasValue;
 		};
 
 		recurse(this);

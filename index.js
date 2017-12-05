@@ -17,9 +17,7 @@ console.log("hasZero", hasZero);
 console.log("hasTwo", hasTwo);
 
 BinaryTree.depthFirstLog(tree, x => {
-	if(x) {
-		console.log("node value", x.value);
-	}
+	console.log("node value", x.value);
 });
 
 console.log("--- using proto ---");
